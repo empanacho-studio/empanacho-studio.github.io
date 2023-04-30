@@ -22,11 +22,39 @@
       span {
         margin: auto;
       }
+      div.blog-entry { max-width: 80ch; margin: auto; }
+      img.logo { width: 480px; height: 480px; }
+      @media only screen and (max-width: 600px) {
+        body {
+            max-width: 320px;
+        }
+        div.blog-entry { max-width: 320px; margin: auto; }
+        img.logo { width: 320px; height: 320px; }
+      }
     </style>
   </head>
   <body>
     <span>
-      <img class="avatar rounded-1" src="empanacho-studio.png" alt="@empanacho" width="480" height="480">
+      <img class="logo" src="empanacho-studio.png" alt="@empanacho">
     </span>
+    <div class="blog-entry">
+        <h4>
+            @(^_^)
+        </h4>
+    </div>
+    <div class="blog-entry">
+        <h4>
+            @gamedev blog, Day #1 (1682829530)
+        </h4>
+        <p>
+            I started <a href="https://github.com/empanacho/in-the-search-of-the-one-true-empanada">the Unity project</a>. I haven't done Unity before so I took a few official tutorials. So far C# seems quite simple or maybe it's because I have been coding for a decade now. Not that I'm good at it. I consider myself mediocre program writer with flashes of genius.
+        </p>
+        <p>
+            Also wrote <a href="https://github.com/orgs/empanacho/discussions">the folklore of Empanacho verse</a>.
+        </p>
+        <p>
+            The difficult part, thuogh, will be the artistic aspect of the project. I have hopes in all those AI for image creation and shirt. The logo, for starters, was made with midjourney. I have no idea what kind of prompt i will need for landscapes and animated sprites. I pressume I just need to use the same seed? I dunno.
+        </p>
+    </div>
   </body>
 </html>
