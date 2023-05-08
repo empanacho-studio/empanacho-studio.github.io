@@ -1,4 +1,5 @@
 <!doctype html>
+<!-- And you know... I do love you, very much indeed. I pray to the gods and goddesses to give of a second chance... 919 -->
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -31,6 +32,30 @@
         div.blog-entry { max-width: 320px; margin: auto; }
         img.logo { width: 320px; }
       }
+      a {
+        color: black;
+        position: relative;
+        text-decoration: none;
+      }
+
+      a::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        border-radius: 4px;
+        background-color: yellow;
+        bottom: 0;
+        left: 0;
+        transform-origin: right;
+        transform: scaleX(0);
+        transition: transform .3s ease-in-out;
+      }
+
+      a:hover::before {
+        transform-origin: left;
+        transform: scaleX(1);
+      }
     </style>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-3DS129NBDV"></script>
@@ -49,10 +74,30 @@
 
     <div class="blog-entry">
         <h4>
-            @(^_^)
+            - טאט -
         </h4>
     </div>
 
+    <div class="blog-entry">
+        <h4>
+            @gamedev blog, Day #10 (1683518561)
+        </h4>
+        <p>
+            So, this is pretty obvious involved a lot of things to do: music, art, coding, marketing and social networks. I'm not even counting accounting and legal stuff 😔
+        </p>
+        <p>
+            I'm starting to consider to have a minidemo, developed as much as possible the story and then use that for a kickstarter campaing.
+        </p>
+        <p>
+            The odds of getting funded? Zero. Who will care for a sad story of a raccoon, his trauma and his battle against interdimensional forces to protect the One True Empanada? This has become my identity that clearly is just a coping mechanism to keep on moving. The story is full of personal details and projections. Why would anyone care? After all, we all have our struggles. This is no difference.
+        </p>
+        <p>
+            Today was clearly a very demoralized day.
+        </p>
+        <p>
+            To make the matter worse, I'm still unemployed.
+        </p>
+    </div>
     <div class="blog-entry">
         <h4>
             @gamedev blog, Day #9 (1683487652)
@@ -126,7 +171,7 @@
             Tomorrow, I think I will start doing mini games for testing my knowledge/learning so far. This minigames, I think, can have mechanics that I can then put together for Empanacho.
         </p>
         <p>
-            Hopefully I'll be starting two possible startups with two diff friends 🫣 🤞
+            Hopefully I'll be starting one possible startup with a friends 🫣 🤞
         </p>
         <p>
             I guess the complain later will be I have no time for anything 🤣
@@ -179,6 +224,22 @@
         <p>
             The difficult part, thuogh, will be the artistic aspect of the project. I have hopes in all those AI for image creation and shirt. The logo, for starters, was made with midjourney. I have no idea what kind of prompt i will need for landscapes and animated sprites. I pressume I just need to use the same seed? I dunno.
         </p>
+    </div>
+
+    <div class="blog-entry">
+        <h4>
+            - טאט -
+        </h4>
+    </div>
+
+    <div class="blog-entry">
+        <blockquote>
+            <em>
+                Because broken people are needed to save the world.<br/>
+                They know the bad, they are invested in stopping it.<br/>
+                That's what a hero is.
+            </em>
+        </blockquote>
     </div>
   </body>
 </html>
