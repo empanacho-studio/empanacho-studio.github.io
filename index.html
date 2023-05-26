@@ -15,48 +15,43 @@
     <title>Empanacho Studio</title>
     <style>
       body, html {
-        height: 100%;
-        width: 100%;
-        display: flex;
-        font-family: monospace;
-        background-color: #fdfdfd;
-        margin: 0;
+          height: 100%;
+          width: 100%;
+          display: flex;
+          font-family: monospace;
+          background-color: #fdfdfd;
+          margin: 0;
       }
       span {
-        margin: auto;
+          margin: auto;
       }
       div.blog-entry { max-width: 80ch; margin: auto; }
+      img { width: 320px; }
       img.logo { width: 420px; }
-      @media only screen and (max-width: 600px) {
-        body {
-            max-width: 320px;
-        }
-        div.blog-entry { max-width: 320px; margin: auto; }
-        img.logo { width: 320px; }
-      }
+
       a {
-        color: black;
-        position: relative;
-        text-decoration: none;
+          color: black;
+          position: relative;
+          text-decoration: none;
       }
 
       a::before {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 4px;
-        border-radius: 4px;
-        background-color: yellow;
-        bottom: 0;
-        left: 0;
-        transform-origin: right;
-        transform: scaleX(0);
-        transition: transform .3s ease-in-out;
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 4px;
+          border-radius: 4px;
+          background-color: yellow;
+          bottom: 0;
+          left: 0;
+          transform-origin: right;
+          transform: scaleX(0);
+          transition: transform .3s ease-in-out;
       }
 
       a:hover::before {
-        transform-origin: left;
-        transform: scaleX(1);
+          transform-origin: left;
+          transform: scaleX(1);
       }
 
       .container {
@@ -65,43 +60,76 @@
       }
 
       .side-column {
-        display: inline-flex;
-        width: 500px;
-        position: fixed;
-        top: 0;
-        bottom: 0;
+          display: inline-flex;
+          width: 500px;
+          position: fixed;
+          top: 0;
+          bottom: 0;
       }
 
       .side-column img {
-        display: block;
-        max-width: 100%;
-        height: auto;
+          display: block;
+          max-width: 100%;
+          height: auto;
       }
 
       .middle-column {
-        display: inline-flex;
-        flex-grow: 1;
-        background-color: #fff;
-        overflow-y: scroll;
-        flex-direction: column;
+          display: inline-flex;
+          flex-grow: 1;
+          background-color: #fff;
+          overflow-y: scroll;
+          flex-direction: column;
       }
 
       .img-left {
-        background-image: url('left.png');
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center;
-        background-size: cover;
-        width: 100%;
+          background-image: url('left.png');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-position: center;
+          background-size: cover;
+          width: 100%;
       }
 
       .img-right {
-        background-image: url('right.png');
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center;
-        background-size: cover;
-        width: 100%;
+          background-image: url('right.png');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-position: center;
+          background-size: cover;
+          width: 100%;
+      }
+
+      @media only screen and (max-width: 600px) {
+          body {
+              max-width: 320px;
+          }
+          div.blog-entry { max-width: 320px; margin: auto; }
+          img { width: 280 px; }
+          img.logo { width: 280px; }
+          .side-column {
+              display: inline-flex;
+              width: 10px;
+              position: fixed;
+              top: 0;
+              bottom: 0;
+          }
+
+          .side-column img {
+              display: block;
+              max-width: 100%;
+              height: auto;
+          }
+
+          .middle-column {
+              padding: 15px;
+              display: inline-flex;
+              flex-grow: 1;
+              background-color: #fff;
+              overflow-y: scroll;
+              flex-direction: column;
+          }
+
+          div.blog-entry { max-width: 280px; margin: auto; }
       }
     </style>
 
@@ -176,7 +204,7 @@
                   Learnt that raccoons are loved in Japan... Maybe, I should make some scenes in a japanese city. I mean, raccoons love cities.
                   </p>
                   <p style="display: flex; justify-content: center;">
-                  <img src="empanacho_city.png" alt="Empanacho at Japan" width="480" />
+                  <img src="empanacho_city.png" alt="Empanacho at Japan" />
                   </p>
               </div>
 
@@ -201,7 +229,7 @@
                   </p>
 
                   <p style="display: flex; justify-content: center;">
-                  <img src="empanacho_andino.png" alt="Empanacho Andino" width="320" />
+                  <img src="empanacho_andino.png" alt="Empanacho Andino" />
                   </p>
               </div>
 
@@ -254,7 +282,7 @@
                   </blockquote>
                   </p>
                   <p style="display: flex; justify-content: center;">
-                  <img src="draft_empanacho_nosy.gif" alt="Empanacho's being nosy" width="320" />
+                  <img src="draft_empanacho_nosy.gif" alt="Empanacho's being nosy" />
                   </p>
                   <p>
                   This is not the final product nor the actual design of Empanacho. I'm still rooting for a pixel art version and Empanacho's furry is purpleish.
@@ -278,7 +306,7 @@
                   Still, that's poor progress for Empanacho's game.
                   </p>
                   <p style="display: flex; justify-content: center;">
-                  <img src="empanacho-ukulele.png" alt="Empanacho and his Ukulele" width="320" />
+                  <img src="empanacho-ukulele.png" alt="Empanacho and his Ukulele" />
                   </p>
               </div>
 
