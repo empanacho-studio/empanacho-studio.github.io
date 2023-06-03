@@ -61,7 +61,7 @@
 
       .side-column {
           display: inline-flex;
-          width: 500px;
+          width: 16.66%;
           position: fixed;
           top: 0;
           bottom: 0;
@@ -99,37 +99,30 @@
           width: 100%;
       }
 
-      @media only screen and (max-width: 600px) {
-          body {
-              max-width: 320px;
-          }
-          div.blog-entry { max-width: 320px; margin: auto; }
-          img { width: 280 px; }
-          img.logo { width: 280px; }
-          .side-column {
-              display: inline-flex;
-              width: 10px;
-              position: fixed;
-              top: 0;
-              bottom: 0;
-          }
+      @media only screen {
+        div.blog-entry { max-width: 80ch; margin: auto; }                                                             
+        img { width: 280px; }                                                                                         
+        img.logo { width: 280px; }                                                                                     
+        .side-column {                                                                                                
+          display: inline-flex;                                                                                     
+          width: calc(calc(100% - 100ch) / 2);
+        }                                                                                                             
 
-          .side-column img {
-              display: block;
-              max-width: 100%;
-              height: auto;
-          }
+        .side-column img {                                                                                            
+          display: block;                                                                                           
+          max-width: 100%;                                                                                          
+          height: auto;                                                                                             
+        }                                                                                                             
 
-          .middle-column {
-              padding: 15px;
-              display: inline-flex;
-              flex-grow: 1;
-              background-color: #fff;
-              overflow-y: scroll;
-              flex-direction: column;
-          }
+        .middle-column {                                                                                              
+          padding: 15px;                                                                                            
+          display: inline-flex;                                                                                     
+          flex-grow: 1;                                                                                             
+          background-color: #fff;                                                                                   
+          overflow-y: scroll;                                                                                       
+          flex-direction: column;                                                                                   
 
-          div.blog-entry { max-width: 280px; margin: auto; }
+        }
       }
     </style>
 
